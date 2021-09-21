@@ -1,0 +1,16 @@
+{% extends "FD/base.html" %}
+
+{% block body %}
+
+
+    {% for i in c%}
+        {{i.Fuser}}
+        <br>
+        <h1 style="color:blue;">{{i.Title}}</h1>
+        <br>
+    <p style="color:black;"> {{i.Body}}</p>
+    {% empty%}
+        No data here.
+    {% endfor%}
+
+{% endblock %}

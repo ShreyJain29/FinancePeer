@@ -1,0 +1,16 @@
+{% extends "FD/base.html" %}
+
+{% block body %}
+
+<br>
+{% if message %}
+  {{message}}
+{% endif %}
+<form action="{% url 'index' %}" method="post" enctype="multipart/form-data">
+  {% csrf_token %}
+  <input type="file" id="myFile" name="file">
+  <input type="submit">
+</form>
+
+
+{% endblock %}
