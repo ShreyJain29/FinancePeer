@@ -1,2 +1,2 @@
 # FinancePeer
-Project for Financepeer can be founf here.
+Project for Financepeer can be found here.
